@@ -1,1 +1,47 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Daily Routine</title>\n    <style>\n        body {\n            background-color: rgb(255, 255, 255);\n            border: 1px solid var(--accent-color);\n            font-family: Arial, sans-serif;\n        }\n        .container {\n            width: 80%;\n            margin: auto;\n        }\n        h1 {\n            color: var(--primary-color);\n        }\n        .section {\n            margin: 20px 0;\n            padding: 10px;\n            border: 1px solid var(--dark-color);\n        }\n        .task {\n            margin: 5px 0;\n            background-color: var(--secondary-color);\n            padding: 8px;\n            color: white;\n        }\n        .drop-area {\n            border: 2px dashed var(--accent-color);\n            padding: 20px;\n            text-align: center;\n        }\n    </style>\n</head>\n<body>\n    <div class="container">\n        <h1>Daily Routine</h1>\n        <div class="section">\n            <h2>Morning</h2>\n            <div class="task">Wake up</div>\n            <div class="task">Make a bed</div>\n            <div class="task">Wash my face</div>\n            <div class="drop-area">Drag and drop tasks here!</div>\n        </div>\n        <div class="section">\n            <h2>Afternoon</h2>\n            <div class="task">Take breakfast</div>\n            <div class="drop-area">Drag and drop tasks here!</div>\n        </div>\n        <div class="section">\n            <h2>Evening</h2>\n            <div class="task">Go to school</div>\n            <div class="drop-area">Drag and drop tasks here!</div>\n        </div>\n    </div>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📅 Daily Routine Planner</h1>
+        
+        <div class="routine-grid">
+            <!-- Morning Section -->
+            <div class="section" id="morning-section">
+                <h2>🌅 Morning</h2>
+                <div class="tasks-container">
+                    <div class="task" id="task-1" draggable="true">☀️ Wake up</div>
+                    <div class="task" id="task-2" draggable="true">🛏️ Make a bed</div>
+                    <div class="task" id="task-3" draggable="true">🚿 Wash my face</div>
+                </div>
+                <div class="drop-area"><span class="empty-state">Drop tasks here</span></div>
+            </div>
+
+            <!-- Afternoon Section -->
+            <div class="section" id="afternoon-section">
+                <h2>☀️ Afternoon</h2>
+                <div class="tasks-container">
+                    <div class="task" id="task-4" draggable="true">🍽️ Take breakfast</div>
+                </div>
+                <div class="drop-area"><span class="empty-state">Drop tasks here</span></div>
+            </div>
+
+            <!-- Evening Section -->
+            <div class="section" id="evening-section">
+                <h2>🌙 Evening</h2>
+                <div class="tasks-container">
+                    <div class="task" id="task-5" draggable="true">🎒 Go to school</div>
+                </div>
+                <div class="drop-area"><span class="empty-state">Drop tasks here</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
